@@ -39,7 +39,7 @@ const SignIn = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView className="bg-[#03120E] h-full">
       <ScrollView>
         <View
           className="w-full flex justify-center h-full px-4 my-6"
@@ -47,14 +47,14 @@ const SignIn = () => {
             minHeight: Dimensions.get("window").height - 100,
           }}
         >
-          <Image
+          {/* <Image
             source={images.logo}
             resizeMode="contain"
             className="w-[115px] h-[34px]"
-          />
+          /> */}
 
           <Text className="text-2xl font-semibold text-white mt-10 font-psemibold">
-            Log in to Aora
+            Log in to Picstar
           </Text>
 
           <FormField
@@ -85,7 +85,7 @@ const SignIn = () => {
             </Text>
             <Link
               href="/sign-up"
-              className="text-lg font-psemibold text-secondary"
+              className="text-lg font-psemibold text-[#FCFDAF]"
             >
               Signup
             </Link>

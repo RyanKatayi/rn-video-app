@@ -90,7 +90,7 @@ const Create = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView className="bg-[#03120E] h-full">
       <ScrollView className="px-4 my-6">
         <Text className="text-2xl text-white font-psemibold">Upload Video</Text>
 
@@ -117,8 +117,8 @@ const Create = () => {
                 isLooping
               />
             ) : (
-              <View className="w-full h-40 px-4 bg-black-100 rounded-2xl border border-black-200 flex justify-center items-center">
-                <View className="w-14 h-14 border border-dashed border-secondary-100 flex justify-center items-center">
+              <View className="w-full h-40 px-4 bg-[#03120E]rounded-2xl border border-[#FCFDAF] flex justify-center items-center">
+                <View className="w-14 h-14 border border-dashed border-[#FCFDAF] flex justify-center items-center">
                   <Image
                     source={icons.upload}
                     resizeMode="contain"
@@ -144,14 +144,14 @@ const Create = () => {
                 className="w-full h-64 rounded-2xl"
               />
             ) : (
-              <View className="w-full h-16 px-4 bg-black-100 rounded-2xl border-2 border-black-200 flex justify-center items-center flex-row space-x-2">
+              <View className="w-full h-16 px-4 bg-[#03120E] rounded-2xl border-2 border-[#FCFDAF] flex justify-center items-center flex-row space-x-2">
                 <Image
                   source={icons.upload}
                   resizeMode="contain"
                   alt="upload"
                   className="w-5 h-5"
                 />
-                <Text className="text-sm text-gray-100 font-pmedium">
+                <Text className="text-sm text-gray-100 bg-[#03120E] font-pmedium">
                   Choose a file
                 </Text>
               </View>
@@ -162,7 +162,7 @@ const Create = () => {
         <FormField
           title="AI Prompt"
           value={form.prompt}
-          placeholder="The AI prompt of your video...."
+          placeholder="Your video prompt..."
           handleChangeText={(e) => setForm({ ...form, prompt: e })}
           otherStyles="mt-7"
         />
